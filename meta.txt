@@ -1,0 +1,17 @@
+Button {
+    value
+    function
+    symbol
+    size
+    position
+    type [operator,number]
+
+}
+
+calculator{
+    currentExpression
+    screen
+    drawScreen
+    updateScreen
+
+}

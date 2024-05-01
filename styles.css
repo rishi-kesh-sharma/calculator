@@ -1,0 +1,74 @@
+@font-face {
+  font-family: CalcFont;
+  src: url(./fonts/digital-7.ttf);
+}
+
+* {
+  font-family: CalcFont;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#calculator {
+  /* border: 1px solid black; */
+  /*min-height: 400px;
+  min-width: 300px;*/
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 3rem;
+  background-color: rgb(45, 45, 45);
+  gap: 2rem;
+}
+#screen {
+  border: 1px solid gray;
+  display: flex;
+  min-height: 8rem;
+  align-items: center;
+  justify-content: end;
+  padding: 2rem 2rem 2rem 0;
+  font-size: 4rem;
+  background-color: rgb(223, 249, 183);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  background-color: rgb(172, 172, 172);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(220, 217, 217);
+}
